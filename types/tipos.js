@@ -1,16 +1,16 @@
 "use strict";
-let nome = 'northon';
+var nome = 'northon';
 console.log('nome: ', typeof (nome), '\n');
-let num = 8;
+var num = 8;
 console.log('num: ', typeof (num), '\n');
-const truth = true;
+var truth = true;
 console.log('truth: ', typeof (truth), '\n');
-const numbers = [1, 2];
+var numbers = [1, 2];
 console.log('numbers: ', typeof numbers, '\n');
 //tuplas
-const variado = ['Kensie Agarie', 555];
+var variado = ['Kensie Agarie', 555];
 console.log('variado:', typeof variado, '\n');
-const tudo = [];
+var tudo = [];
 function dividir(numA, numB) {
     return numA / numB;
 }
@@ -23,19 +23,19 @@ function potencia(numA, numB) {
 function helloWorld() {
     return ('Hello Dare');
 }
-let calculo;
+var calculo;
 calculo = dividir;
 console.log('divisão: ', calculo(6, 2));
 calculo = multiplicar;
 console.log('multiplicação: ', calculo(6, 2));
 calculo = potencia;
 console.log('potencia: ', calculo(6, 2));
-let hamburger;
+var hamburger;
 hamburger = { breed: 'francês', burger: 'Carne Moida' };
-let funcionario;
+var funcionario;
 funcionario = {
     supervisores: ['beatriz', 'angelo'],
-    hora: (numA) => {
+    hora: function (numA) {
         if (numA < 8 && numA > 0) {
             return ('no ponto');
         }
@@ -48,7 +48,7 @@ funcionario = {
     }
 };
 console.log(funcionario.supervisores);
-let zoado = {
+var zoado = {
     empregado: false,
     mundo: 'prime',
     empregos: ['programador'],
@@ -57,7 +57,7 @@ let zoado = {
     happiness: true,
     namoradas: []
 };
-let gabi = 1;
+var gabi = 1;
 console.log('hamburger: ', hamburger);
 //enums
 var Cor;
@@ -67,7 +67,7 @@ var Cor;
     Cor[Cor["Roxo"] = 2] = "Roxo";
     Cor[Cor["Azul"] = 3] = "Azul";
 })(Cor || (Cor = {}));
-const amarelo = Cor.Amarelo;
+var amarelo = Cor.Amarelo;
 console.log('enum: ', amarelo);
 tudo.push(nome, num, truth, numbers, variado);
 console.log('\n', 'tudo: ', tudo);
